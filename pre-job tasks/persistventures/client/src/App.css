@@ -1,0 +1,10 @@
+
+  :root{
+      margin: 0 auto;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #000000;
+  } 
+  .ProseMirror {
+    display: none; /* Hide elements with the ProseMirror class */
+  }

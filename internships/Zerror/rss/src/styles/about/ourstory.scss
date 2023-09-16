@@ -1,0 +1,99 @@
+.ourstory-heroscroll-outer {
+    overflow: hidden;
+    position: relative;
+}
+
+.ourstory-heroscroll-inner {
+    border: none;
+    position: relative;
+    height: calc(100vh - 5.3rem);
+    width: 400vw;
+    top: 5.3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.ourstory-scroll-1 {
+    position: relative;
+    height: calc(100vh - 5.3rem);
+    width: 100vw;
+    display: flex;
+    color: white;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    .centerscroll1{
+       display: flex;
+         flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+    }
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 200;
+        position: relative;
+        // margin-bottom: 3rem;
+    }
+    h1 {
+        font-size: 4rem;
+        line-height: 1;
+        text-align: center;
+    }
+}
+
+.ourstory-scroll-2 {
+    background-color: var(--primary-color);
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 5.3rem);
+
+    .section-2-vidcontainer {
+        position: absolute;
+        height: calc(90vh - 5.3rem);
+        width: 70vw;
+        right: 0;
+        top: 0;
+        margin: 2rem auto;
+        margin-right: 1rem;
+    }
+    h3 {
+        position: relative;
+        font-size: 6rem;
+        font-weight: 200;
+        margin: 60vh 0 0 3rem;
+        z-index: 100;
+        color: white;
+    }
+    
+}
+.ourstory-scroll-3 {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 5.3rem);
+    // padding: 2rem 0 0 5rem;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    h3 {
+        position: relative;
+        font-size: 5rem;
+        font-weight: 200;
+        padding: 0;
+        z-index: 1;
+        margin-bottom: 1rem;
+    }
+    p {
+        position: relative;
+        font-size: 1rem;
+        font-weight: 200;
+        // padding-left: 0.5rem;
+        z-index: 100;
+        width: 80%;
+        line-height: 1.5rem;
+        // background-color: aqua;
+    }
+}

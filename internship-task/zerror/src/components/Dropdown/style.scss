@@ -1,0 +1,72 @@
+.menu-items {
+  position: relative;
+  font-size: 12px;
+  padding: 0.2rem;
+}
+.menu-items button {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  font-size: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) { 
+  .menu-items div {
+    list-style: none;
+    color: black;
+    margin-left: 1rem;
+    padding: 0.5rem 0;
+  }
+  .menu-items a{
+  margin-left: 1rem;
+}
+}
+
+
+.menu-items a:hover,
+.menu-items button:hover {
+  cursor: pointer;
+  transition: opacity 1s linear 2s; 
+}
+
+
+.dropdown {
+  margin-top: 0.3rem;
+  position: absolute;
+  left: 3;
+  width: min-content;
+  height: fit-content;
+  background-color: white;
+  opacity: 0.9;
+  font-size: 0.5rem;
+  z-index: 9999;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  list-style: none;
+  display: none;
+  @media screen and (max-width: 1200px) {
+    position: relative;
+    margin-left: 1.5rem;
+    white-space: nowrap;
+  }
+  li{
+    a{
+      color:gray;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .menu-items:hover .dropdown {
+  display: block;
+}
+}
+.menu-items:hover .dropdown {
+  display: block;
+}
+
+

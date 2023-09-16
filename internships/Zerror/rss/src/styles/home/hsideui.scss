@@ -1,0 +1,78 @@
+.hsideui {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.hsideui-container {
+    width: 80% !important;
+    height: 35%;
+    margin: auto;
+    display: flex;
+    width: min-content;
+    gap: 1.2rem;
+    transition: all 0.3s ease;
+    
+}
+
+.hsideui-card {
+    
+    width: 100% ;
+    height: 100%;
+    border-radius: 0.3rem;
+    transition: all 0.3s ease;
+}
+.hsideui-card:hover {
+    
+    opacity: 0.8;
+    
+}
+// .hsideui-card-container {
+    
+//     // width: min-content;
+// }
+
+.hsideui-card-icon {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+.hsideui-card-title {
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+
+@media screen and (max-width: 426px) {
+    .hsideui {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        height: min-content;
+        
+    }
+    .hsideui-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .hsideui-card{
+        width: 45%;
+        padding: 0.8rem;
+    }
+    .hsideui-card:nth-child(1) {
+        background-color: black !important;
+        border: 2px solid var(--primary-color);
+    }
+    .hsideui-card:nth-child(2) {
+        background-color: var(--primary-color);
+    }
+}

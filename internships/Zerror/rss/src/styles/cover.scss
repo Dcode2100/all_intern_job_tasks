@@ -1,0 +1,16 @@
+// .cover-first{
+//     background-color: black;
+//     z-index: 5;
+// }
+.cover-second{
+    background-color: var(--primary-color);
+    z-index: 4;
+}
+
+.cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}

@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&family=Poppins:wght@100&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Agrandir-GrandHeavy"; /* Choose a name for your font family */
+  src: url("./assets/agrandir-font/Agrandir-GrandHeavy.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-family: 'Agrandir-GrandHeavy','Mulish';
+}
+
+

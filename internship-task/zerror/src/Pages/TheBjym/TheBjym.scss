@@ -1,0 +1,113 @@
+.container {
+  height: 80%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fc6e00;
+}
+
+.carousel-container {
+  height: 100%;
+}
+
+.carousel {
+  height: 45rem;
+  @media screen and (max-width: 1025px) {
+    height: 30rem;
+  }
+  @media screen and (max-width: 426px) {
+    height: 15rem;
+  }
+  div {
+    color: white;
+    position: absolute;
+    transform: translate(38%, 40%);
+    @media screen and (max-width: 1025px) {
+      transform: translate(30%, 40%);
+    }
+    @media screen and (max-width: 769px) {
+      transform: translate(22%, 50%);
+    }
+    @media screen and (max-width: 426px) {
+      transform: translate(27%,45%);
+    }
+
+    h2 {
+      margin-left: 1rem;
+      font-size: 3rem;
+      font-weight: 400;
+      @media screen and (max-width: 1025px) {
+        font-size: 2rem;
+      }
+      @media screen and (max-width: 769px) {
+        font-size: 1.5rem;
+      }
+      @media screen and (max-width: 426px) {
+        font-size: 1rem;
+      }
+    }
+    h1 {
+      font-size: 17rem;
+      @media screen and (max-width: 1025px) {
+        font-size: 12rem;
+      }
+      @media screen and (max-width: 769px) {
+          font-size: 10rem;
+      }
+      @media screen and (max-width: 426px) {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+.carousel-img {
+  position: absolute;
+  width: 45rem;
+  transform: translate(60%, 0);
+  object-fit: cover;
+  object-position: top;
+  margin: auto;
+
+  @media screen and (max-width: 1025px) {
+    transform: translate(65%, 0);
+    object-position: top;
+    width: 30rem;
+  }
+  @media screen and (max-width: 769px) {
+    transform: translate(22%, 0);
+    width: 35rem;
+  }
+  @media screen and (max-width: 426px) {
+    transform: translate(40%, 0);
+    width: 15rem;
+  }
+}
+
+.prev-arrow {
+  background-color: transparent;
+  position: absolute;
+  z-index: 1000;
+  top: 45%;
+  padding-right: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  writing-mode: vertical-lr;
+  text-orientation: sideways-right;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.next-arrow {
+  background-color: transparent;
+  position: absolute;
+  z-index: 1000;
+  top: 45%;
+  right: 0;
+  padding-left: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  writing-mode: vertical-lr;
+  text-orientation: sideways-right;
+  transform: rotate(180deg);
+  cursor: pointer;
+}

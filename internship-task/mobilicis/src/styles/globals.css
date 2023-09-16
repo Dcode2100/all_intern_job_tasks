@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 1240px) {
+   .profile-container{
+    zoom: 1.5;
+   }
+}
+
+@media screen and (min-width: 360px) {
+   .connection-card{
+    zoom: 1.5;
+   }
+}
+    

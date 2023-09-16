@@ -1,0 +1,63 @@
+.sideui {
+    position: fixed;
+    right: 0;
+    top: 7rem;
+    // border: 2px solid yellow;
+    width: min-content;
+    height: 62vh;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-out;
+    z-index: 2;
+    
+    .sideui-container {
+        position: relative;
+        // border: 2px solid green;
+        height: 100%;
+    
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            // border: 2px solid blue;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            li {
+                // border: 2px solid red;
+                display: flex;
+                background-color: var(--primary-color);
+                justify-content: space-around;
+                width: 4rem;
+                height: 5rem;
+                border-radius: 0.3rem;
+                .sideui-a-container {
+                    // border: 2px solid blue;
+                    display: flex;
+                    justify-content: center;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    .sideui-img {
+                        position: relative;
+                        // border: 2px solid yellow;
+                        width: 2.5rem;
+                        height: 3rem;
+                        margin: auto;
+                        margin-top: 0.3rem;
+                        img {
+                            object-fit: cover;
+                            width: 2.5rem !important;
+                            height: 3rem !important;
+                        }
+                    }
+                    .sideui-title {
+                        font-size: 0.5rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+

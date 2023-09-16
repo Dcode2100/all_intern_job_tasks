@@ -1,0 +1,77 @@
+.leadership-heroscroll-outer {
+    overflow: hidden;
+}
+
+.leadership-heroscroll-inner {
+    position: relative;
+    height: calc(100vh - 5.3rem);
+    width: 400vw;
+    top: 5.3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.leadership-scroll-1 {
+    position: relative;
+    height: calc(100vh - 5.3rem);
+    width: 100vw;
+    display: flex;
+    color: white;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        font-size: 7rem;
+        font-weight: 200;
+        color: var(--primary-color);
+    }
+}
+
+.leadership-scroll-2 {
+    background-color: black;
+    position: relative;
+    width: 100vw;
+    padding: 0rem 6rem;
+    height: calc(100vh - 5.3rem);
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    border: none;
+    
+
+    .l-membercard {
+        position: relative;
+        width: min-content;
+        height: min-content;
+
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        // border: 2px solid white;
+    }
+    .l-membercard-container {
+        background-color: var(--primary-color);
+        margin: auto;
+        position: relative;
+        height: 15rem;
+        width: 15rem;
+        img{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        h1 {
+            color: white;
+            font-size: 26px;
+        }
+        p {
+            font-weight: 500;
+            
+            font-size: 12px;
+
+            color: white;
+        }
+    }
+}

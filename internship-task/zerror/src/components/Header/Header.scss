@@ -1,0 +1,131 @@
+.header-container {
+    height: 3em;
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 426px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 1025px) {
+        width: 90%;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 1200px) {
+        height: 5em;
+       justify-content: space-between;
+    }
+    @media  screen and (min-width: 1400px) {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+.header-left-container {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1401px) {
+        width: 100%;
+    }
+    
+    img {
+        height: 3.8rem;
+        width: 3.8rem;
+        object-fit: cover;
+        object-position: center;
+        margin-right: 1rem;
+    }
+}
+
+.navbar-drop-down {
+    button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.navbar-drop-down-item {
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    top: 5rem;
+    left: 0rem;
+    display: flex;
+    background-color: #F9F6F4;
+    opacity: 0.95;
+    flex-direction: column;
+    z-index: 100;
+}
+
+
+.navlink-container {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1401px) {
+        min-width: 75%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+    
+
+    li {
+        list-style: none;
+        padding: 0 1rem;
+        
+        a {
+            display: flex;
+            white-space: nowrap;
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-size: 0.7rem;
+            @media screen and (min-width: 1401px) {
+            font-size: 0.9rem;
+        }
+        }
+    }
+}
+
+.header-right-container {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 8%;
+
+    @media screen and (max-width: 500px) {
+        width: 20%;
+    }
+    button {
+        background-color: transparent;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    img {
+        height: 3.5rem;
+        width: 3.5rem;
+        object-fit: cover;
+        object-position: center;
+        display: flex;
+        padding-left: 2rem;
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+    }
+}

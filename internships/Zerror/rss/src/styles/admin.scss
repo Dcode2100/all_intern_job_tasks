@@ -1,0 +1,158 @@
+.navigation {
+    position: fixed;
+    inset: 20px;
+    background: var(--primary-color);
+    width: 12rem;
+    
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.sidebar-heading {
+    color: black;
+    font-size: 1.5rem;
+}
+.toggle-container {
+    width: 100%;
+    justify-content: flex-end;
+}
+.toggle {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    transform: 0.7s;
+}
+
+.toggle::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 3px;
+    border-radius: 3px;
+    background: black;
+    transform: translateY(3px);
+}
+.toggle::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 3px;
+    border-radius: 3px;
+    background: black;
+    transform: translateY(-3px);
+    transition: 1s;
+}
+.navigation.active {
+    width: 3rem;
+}
+.navigation.active .toggle::before {
+    transform: translateY(0px) rotate(-405deg);
+}
+.navigation.active .toggle::after {
+    transform: translateY(0px) rotate(225deg);
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 60px;
+    text-decoration: none;
+    color: black;
+    // transition: 0.3s;
+}
+.navigation ul li:nth-child(1) {
+    top: 20px;
+    margin-bottom: 30px;
+    background: none;
+    display: flex;
+    cursor: context-menu;
+    &:hover {
+        background: none;
+    }
+}
+
+.navigation ul li:not(:first-child):hover::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    // background: red;
+    border-bottom-right-radius: 20px;
+    box-shadow: 7.5px 7.5px 0 7.5px white;
+
+}
+.navigation ul li:not(:first-child):hover::after{
+    content: "";
+    position: absolute;
+    bottom:-20px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 7.5px -7.5px 0 7.5px #fff;
+
+}
+
+
+.navigation ul li:hover {
+    background: #fff;
+    color: #222;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 50px;
+    line-height: 70px;
+    text-align: center;
+
+}
+.navigation ul li a .title {
+   position: relative;
+   display: block;
+//    padding:  0 10px;
+height: 60px;
+line-height: 60px;
+text-align: start;
+white-space: nowrap;
+}
+
+.title1{
+    padding-left: 20px;
+    white-space: nowrap;
+}
+.icon1{
+    padding-left: 20px;
+    white-space: nowrap;
+}

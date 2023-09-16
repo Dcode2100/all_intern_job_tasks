@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&family=Poppins:wght@100&display=swap");
+
+/* font-family: 'Mulish', sans-serif; */
+
+@font-face {
+  font-family: 'agrandir_regular'; /* Choose a name for your font family */
+  src: url('/src/assets/agrandir_font/PPAgrandir-Regular.otf') format('opentype');
+}
+
+

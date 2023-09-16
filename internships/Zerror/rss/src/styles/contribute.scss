@@ -1,0 +1,15 @@
+.contribute{
+    height: calc(100vh - 5.3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contribute-para{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+    color: #000;
+    background-color: blue;
+}

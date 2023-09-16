@@ -1,0 +1,84 @@
+.itemstyle {
+  color: #fff;
+  font-size: 12px;
+  font-style: GrandHeavy;
+  font-weight: 800;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.cashapptext {
+  color: #fff;
+  text-align: center;
+  font-size: 180px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 166px; /* 86.01% */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.cashapptext-app {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 180px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 166px; /* 86.01% */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  z-index: 20 !important;
+}
+
+@keyframes fade-in-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.footer-text {
+  color: #b6b6b6;
+  font-family: Mulish;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13px; /* 130% */
+}
+
+@media screen and (max-width: 769px) {
+  .cashapptext {
+    zoom: 0.8;
+  }
+  .cashapptext-app {
+    zoom: 0.8;
+  }
+  .outflowsvgs {
+    zoom: 0.8;
+  }
+  .cashapptext-phone{
+    zoom: 0.8;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .cashapptext {
+    zoom: 0.7;
+  }
+  .cashapptext-app {
+    zoom: 0.7;
+  }
+  .outflowsvgs {
+    zoom: 0.6;
+  }
+  
+}

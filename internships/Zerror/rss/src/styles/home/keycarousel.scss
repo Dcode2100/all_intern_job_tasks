@@ -1,0 +1,188 @@
+.key-wing-carousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    // width: 100%;
+
+
+        // this is same as the wing-carousel and nothing is changes neither the
+        // classname nor the styles
+
+
+    .sliderdiv {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        .slick-arrow.slick-prev:hover{
+            border: 2px solid var(--primary-color) !important;
+            transition: all 0.2s ease;
+        }
+        .slick-arrow.slick-prev:hover::before{
+            color:  var(--primary-color) !important;
+            transition: all 0.2s ease;
+        }
+        .slick-arrow.slick-next:hover {
+            border: 2px solid var(--primary-color) !important;
+            transition: all 0.2s ease;
+        }
+        .slick-arrow.slick-next:hover::before{
+            color:  var(--primary-color) !important;
+            transition: all 0.2s ease;
+        }
+        .slick-prev:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -56%);
+            font-family: "verdana" !important;
+            color: black !important;
+           
+        }
+        .slick-next:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -56%);
+            font-family: "verdana" !important;
+            color: black !important;
+        }
+    }
+    padding: 0.3rem 0 0.1rem 0rem;
+    .heading-third {
+        color: var(--primary-color);
+        padding: 0 3rem;
+    }
+    .carousel-card {
+        padding: 0 0.7rem;
+        width: 100%;
+        height: 19rem;
+        a {
+            display: block;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            // transition: all 0.3s ease ;
+            border-radius: 0.5rem;
+            // border: 2px solid transparent;
+
+            .div-img {
+                width: 100%;
+                height: 9rem;
+                padding: 0;
+                position: relative;
+                border-radius: 0.5rem;
+                
+                img {
+                    border-radius: 0.5rem 0.5rem 0 0;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .card-info {
+                border-radius: 0 0 0.5rem 0.5rem;
+                padding: 0.8rem;
+                transition: all 0.2s ease ;
+                h3 {
+                    color: var(--primary-color);
+                    font-size: 0.9rem;
+                    font-weight: 100;
+                    padding-bottom: 0.5rem;
+                }
+                span {
+                    font-size: 0.7rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.carousel-card a:hover .card-info{
+    background-color: var(--primary-color);  
+}
+.carousel-card a:hover .card-info h3{
+    color: white !important;
+}
+.wing-button {
+    background-color: transparent;
+    position: relative;
+    color: white;
+    border: 2px solid var(--primary-color);
+    padding: 0.8rem 1.3rem;
+    // width: 8rem;
+    border-radius: 5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    overflow: hidden;
+
+    span {
+        z-index: 1;
+        margin-right: 0.25rem;
+        margin-left: 0.66rem;
+    }
+    svg {
+        z-index: 1;
+        font-size: 1rem;
+        margin-left: 0.25rem;
+    }
+}
+.wing-button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+}
+.wing-button:hover::after {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+.custom-dots {
+    width: 15%;
+    display: flex !important;
+    margin: 1rem auto;
+    justify-content: space-between;
+    list-style: none;
+}
+.custom-dots li {
+    list-style: none;
+    
+   
+}
+.slick-active button{
+    background-color: var(--primary-color);
+}
+
+.custom-dots button {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border-color: var(--primary-color);
+    color: transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+
+    
+}
+.custom-dots li button:hover{
+    background-color: var(--primary-color);
+    opacity: 0.4;
+    transition: 0.1s ease;
+}
+
+@media screen and (max-width: 426px) {
+    .key-wing-carousel{
+        .carousel-card{
+            height: 17rem !important;   
+        }
+    }
+
+}
+    

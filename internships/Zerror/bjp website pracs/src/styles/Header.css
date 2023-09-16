@@ -1,0 +1,142 @@
+.header-container {
+	 height: 4em;
+	 width: 70%;
+	 justify-content: center;
+	 background-color: rgb(222, 219, 214);
+	 display: flex;
+	 align-items: center;
+	 
+}
+ @media screen and (min-width: 426px) {
+	 .header-container {
+		 width: 100%;
+	}
+}
+ @media screen and (max-width: 1025px) {
+	 .header-container {
+		 width: 90%;
+	}
+}
+ @media screen and (max-width: 768px) {
+	 .header-container {
+		 width: 100%;
+	}
+}
+ @media screen and (max-width: 1200px) {
+	 .header-container {
+		 height: 5em;
+		 justify-content: space-between;
+	}
+}
+ @media screen and (min-width: 1400px) {
+	 .header-container {
+		 width: 100%;
+		 justify-content: space-evenly;
+	}
+}
+ .header-left-container {
+	 display: flex;
+	 align-items: center;
+}
+ @media screen and (max-width: 1401px) {
+	 .header-left-container {
+		 width: 100%;
+	}
+}
+ .header-left-container img {
+	 height: 3.8rem;
+	 width: 3.8rem;
+	 object-fit: cover;
+	 object-position: center;
+	 margin-right: 1rem;
+}
+ .navbar-drop-down button {
+	 background-color: transparent;
+	 border: none;
+	 color: white;
+	 cursor: pointer;
+}
+ @media screen and (min-width: 1200px) {
+	 .navbar-drop-down {
+		 display: none;
+	}
+}
+ .navbar-drop-down-item {
+	 position: absolute;
+	 list-style: none;
+	 width: 100%;
+	 top: 5rem;
+	 left: 0rem;
+	 display: flex;
+	 background-color: #f9f6f4;
+	 opacity: 0.95;
+	 flex-direction: column;
+	 z-index: 100;
+}
+ .navlink-container {
+	 display: flex;
+	 justify-content: space-between;
+}
+ @media screen and (max-width: 1401px) {
+	 .navlink-container {
+		 min-width: 75%;
+		 flex-wrap: wrap;
+		 justify-content: flex-start;
+	}
+}
+ @media screen and (max-width: 1200px) {
+	 .navlink-container {
+		 display: none;
+	}
+}
+ .navlink-container li {
+	 list-style: none;
+	 padding: 0 1rem;
+}
+ .navlink-container li a {
+	 display: flex;
+	 white-space: nowrap;
+	 display: inline-block;
+	 text-decoration: none;
+	 color: white;
+	 font-size: 0.7rem;
+}
+ @media screen and (min-width: 1401px) {
+	 .navlink-container li a {
+		 font-size: 0.9rem;
+	}
+}
+ .header-right-container {
+	 display: flex;
+	 align-items: center;
+	 box-sizing: border-box;
+	 justify-content: space-between;
+	 width: 8%;
+}
+ @media screen and (max-width: 500px) {
+	 .header-right-container {
+		 width: 20%;
+	}
+}
+ .header-right-container button {
+	 background-color: transparent;
+	 padding-top: 0.5rem;
+	 padding-left: 0.5rem;
+	 border: none;
+	 color: white;
+	 cursor: pointer;
+}
+ .header-right-container img {
+	 height: 3.5rem;
+	 width: 3.5rem;
+	 object-fit: cover;
+	 object-position: center;
+	 display: flex;
+	 padding-left: 2rem;
+}
+ @media screen and (max-width: 1200px) {
+	 .header-right-container img {
+		 display: none;
+	}
+}
+ 

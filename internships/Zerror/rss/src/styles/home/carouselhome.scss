@@ -1,0 +1,90 @@
+.container {
+    height: calc(100vh - 5.3rem);
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+}
+
+.slick-slider {
+    position: relative;
+    height: 100%;
+}
+.carousel-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.carousel {
+    position: relative;
+    display: block;
+    margin: auto;
+    height: calc(100vh - 5.3rem);
+}
+
+.carousel-img {
+    position: relative;
+    object-fit: cover;
+    margin: auto;
+    height: 100%;
+    
+    img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.prev-arrow {
+    background-color: transparent;
+    position: absolute;
+    z-index: 1000;
+    top: 45%;
+    padding-right: 0.5rem;
+    color: white;
+    font-size: 0.7rem;
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.prev-arrow::after {
+    content: ">";
+    font-size: 0.7rem;
+}
+.next-arrow::before {
+    content: "<";
+    font-size: 0.7rem;
+}
+
+.next-arrow {
+    background-color: transparent;
+    position: absolute;
+    z-index: 1000;
+    top: 45%;
+    right: 0;
+    padding-left: 0.5rem;
+    color: white;
+    font-size: 0.7rem;
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 426px) {
+    .container{
+        height: calc(60vh - 5.3rem) !important;
+    }
+    .carousel-img {
+        height: calc(60vh - 5.3rem) !important;
+        img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
